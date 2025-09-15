@@ -20,6 +20,7 @@ build/
 
 # IDE y editores
 .vscode/settings.json
+.vscode/mcp.json
 .cursor/
 .windsurf/
 .DS_Store

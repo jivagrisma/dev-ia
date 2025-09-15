@@ -1,0 +1,14 @@
+{
+  "spec_fields_to_project": {
+    "id": "TitlePrefix",
+    "title": "Title",
+    "tasks[].title": "Item.Title",
+    "tasks[].labels": "Item.Labels",
+    "tasks[].estimate": "Item.Estimate"
+  },
+  "status_mapping": {
+    "todo": "Todo",
+    "in_progress": "In Progress",
+    "done": "Done"
+  }
+}

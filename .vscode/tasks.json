@@ -1,0 +1,55 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "AI: Setup Methodology",
+      "type": "shell",
+      "command": "bash",
+      "args": ["-c", ".ai-methodology/ai-setup.sh"],
+      "group": "build",
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AI: Install Sync Module",
+      "type": "shell",
+      "command": "bash",
+      "args": ["-c", ".ai-methodology/install-sync.sh"],
+      "group": "build",
+      "presentation": { "reveal": "always" },
+      "problemMatcher": [],
+      "dependsOn": "AI: Setup Methodology"
+    },
+    {
+      "label": "AI: Sync with GitHub",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "sync"],
+      "options": { "cwd": "${workspaceFolder}/.ai-methodology/sync" },
+      "group": "build",
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AI: Dashboard",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dashboard"],
+      "options": { "cwd": "${workspaceFolder}/.ai-methodology/sync" },
+      "group": "build",
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AI: Setup MCP",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "mcp:install"],
+      "options": { "cwd": "${workspaceFolder}/.ai-methodology/sync" },
+      "group": "build",
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    }
+  ]
+}
+

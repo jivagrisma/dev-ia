@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "GitHub.vscode-pull-request-github",
+    "redhat.vscode-yaml",
+    "yzhang.markdown-all-in-one",
+    "EditorConfig.EditorConfig",
+    "ms-azuretools.vscode-docker"
+  ]
+}
+

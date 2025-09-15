@@ -1,0 +1,18 @@
+id: EX-1
+title: Ejemplo - Endpoint de salud
+objectives:
+  - Exponer GET /health para verificar estado
+acceptance_criteria:
+  - Responder 200 con {"status":"ok"}
+artifacts:
+  code:
+    - src/health/handler.(ts|py|go|rb)
+  tests:
+    - tests/health.test.(ts|py|go|rb)
+tasks:
+  - title: Crear handler GET /health
+    labels: [backend, healthcheck]
+    estimate: "1h"
+  - title: Crear test de integración /health
+    labels: [test]
+    estimate: "1h"

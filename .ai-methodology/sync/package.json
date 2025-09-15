@@ -1,0 +1,45 @@
+{
+  "name": "ai-methodology-sync",
+  "version": "1.0.0",
+  "description": "Módulo de sincronización para metodología de desarrollo con IA",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "sync": "node sync.js",
+    "sync:specs": "node sync.js --specs-only",
+    "sync:github": "node sync.js --github-only",
+    "dashboard": "node dashboard.js",
+    "mcp:install": "node mcp-setup.js",
+    "mcp:test": "node mcp-test.js",
+    "dev": "node --watch sync.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@octokit/graphql": "^8.1.1",
+    "@octokit/rest": "^21.0.2",
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.1.0",
+    "inquirer": "^12.0.0",
+    "table": "^6.8.2",
+    "marked": "^14.1.2",
+    "marked-terminal": "^7.2.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/inquirer": "^9.0.7"
+  },
+  "keywords": [
+    "ai",
+    "methodology",
+    "github",
+    "projects",
+    "spec-driven",
+    "mcp",
+    "task-management"
+  ],
+  "author": "AI Methodology Team",
+  "license": "MIT"
+}

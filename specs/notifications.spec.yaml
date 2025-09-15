@@ -1,0 +1,37 @@
+id: NOTIF-1
+title: Sistema de Notificaciones Push
+description: Implementar sistema completo de notificaciones en tiempo real
+
+objectives:
+  - Notificaciones WebSocket en tiempo real
+  - Push notifications para móviles
+  - Email notifications como fallback
+  - Dashboard de administración
+
+tasks:
+  - title: Implementar WebSocket server para notificaciones
+    labels: [backend, websocket, real-time]
+    estimate: "8h"
+    description: Servidor WebSocket para notificaciones en tiempo real
+    
+  - title: Crear sistema de push notifications
+    labels: [mobile, push, notifications]
+    estimate: "12h"
+    description: Integración con servicios de push notifications
+    
+  - title: Implementar email fallback
+    labels: [email, fallback, notifications]
+    estimate: "4h"
+    description: Sistema de email como fallback para notificaciones
+    
+  - title: Dashboard de administración
+    labels: [frontend, admin, dashboard]
+    estimate: "6h"
+    description: Interface para gestionar notificaciones
+
+acceptance_criteria:
+  - Notificaciones se entregan en < 100ms
+  - Push notifications funcionan en iOS y Android
+  - Email fallback se activa automáticamente
+  - Dashboard permite crear/editar/eliminar notificaciones
+  - Analytics de engagement disponibles

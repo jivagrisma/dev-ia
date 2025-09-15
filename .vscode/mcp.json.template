@@ -1,0 +1,39 @@
+{
+  "servers": {
+    "mcp-github-project-manager": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-github-project-manager"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "YOUR_GITHUB_TOKEN_HERE",
+        "GITHUB_OWNER": "YOUR_GITHUB_USERNAME",
+        "GITHUB_REPO": "YOUR_REPOSITORY_NAME",
+        "ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_KEY_HERE",
+        "OPENAI_API_KEY": "YOUR_OPENAI_KEY_HERE",
+        "GOOGLE_API_KEY": "YOUR_GOOGLE_KEY_HERE",
+        "PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_KEY_HERE",
+        "XAI_API_KEY": "YOUR_XAI_KEY_HERE",
+        "GROQ_API_KEY": "YOUR_GROQ_KEY_HERE",
+        "OPENROUTER_API_KEY": "YOUR_OPENROUTER_KEY_HERE"
+      },
+      "type": "stdio"
+    },
+    "task-master-ai": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package=task-master-ai",
+        "task-master-ai"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_KEY_HERE",
+        "OPENAI_API_KEY": "YOUR_OPENAI_KEY_HERE",
+        "GOOGLE_API_KEY": "YOUR_GOOGLE_KEY_HERE",
+        "PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_KEY_HERE"
+      },
+      "type": "stdio"
+    }
+  }
+}

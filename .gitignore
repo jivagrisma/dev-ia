@@ -21,7 +21,7 @@ coverage/
 
 # IDE y editores
 .vscode/settings.json
-.vscode/mcp.json
+.vscode/mcp.json  # Excluir: contiene credenciales (usar setup-mcp-credentials.sh)
 .cursor/
 .windsurf/
 .DS_Store
